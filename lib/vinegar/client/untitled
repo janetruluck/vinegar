@@ -1,4 +1,4 @@
-# Movies
+# Reviews
 module Vinegar
   class Client
     # Movies Search

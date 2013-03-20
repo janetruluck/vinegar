@@ -26,3 +26,5 @@ spec/vinegar/.DS_Store
 lib/vinegar/.DS_Store
 
 lib/vinegar/client/movies/.DS_Store
+
+lib/vinegar/client/movie/.DS_Store
