@@ -24,3 +24,5 @@ spec/fixtures/authentications.yml
 spec/vinegar/.DS_Store
 
 lib/vinegar/.DS_Store
+
+lib/vinegar/client/movies/.DS_Store
