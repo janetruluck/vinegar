@@ -4,8 +4,7 @@ require "vinegar/connection"
 require "vinegar/request"
 
 require "vinegar/client/root"
-
-require "vinegar/client/movies/search"
+require "vinegar/client/movie"
 
 module Vinegar
   class Client
@@ -27,6 +26,6 @@ module Vinegar
     include Vinegar::Request
 
     include Vinegar::Client::Root
-    include Vinegar::Client::Search
+    include Vinegar::Client::Movie
   end
 end
