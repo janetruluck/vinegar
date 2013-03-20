@@ -5,11 +5,6 @@ module Vinegar
       response.body
     end
 
-    def post(path, options = {})
-      response = request(:post, path, options)
-      response
-    end
-
     private
     def request(method, path, options = {})
       url = options.delete(:api_endpoint) || api_endpoint
@@ -25,9 +20,6 @@ module Vinegar
         case method
         when :get
           request.url(path, options)
-        when :post
-          request.path = path
-          request.body = options unless options.empty?
         end
       end
 
