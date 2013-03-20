@@ -15,3 +15,12 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+
+spec/cassettes
+spec/.DS_Store
+
+spec/fixtures/authentications.yml
+
+spec/vinegar/.DS_Store
+
+lib/vinegar/.DS_Store
