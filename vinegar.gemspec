@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = Vinegar::VERSION
   gem.authors       = ["Jason Truluck"]
   gem.email         = ["jason.truluck@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Rotten Tomatoes API Wrapper in Ruby}
+  gem.summary       = spec.description
+  gem.homepage      = "https://github.com/jasontruluck/vinegar"
 
   gem.add_dependency "faraday"
   gem.add_dependency "faraday_middleware"
