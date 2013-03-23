@@ -1,0 +1,3 @@
+api_key:        1234567890 # Your API key
+movies_search: "Star Wars" # Movie title you would like to use for tests
+movie_id:       9          # ID of a movie you would like to use for tests
