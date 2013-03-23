@@ -77,7 +77,7 @@ movies_search: "Star Wars" # Movie title you would like to use for search tests
 movie_id:       9          # ID of a movie you would like to use for movie tests
 ```
 
-A sample is included in the directory.
+A sample is included in the [directory](https://github.com/jasontruluck/vinegar/blob/master/spec/fixtures/authentication.yml.sample).
 
 ## Contributing
 
