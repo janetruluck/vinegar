@@ -1,7 +1,6 @@
 require "spec_helper"
 
 auth = authentications = YAML::load(File.open(File.expand_path("../../fixtures/authentications.yml", __FILE__)))
-p auth
 
 # Client Spec
 describe Vinegar::Client do
