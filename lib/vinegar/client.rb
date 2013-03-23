@@ -6,6 +6,7 @@ require "vinegar/request"
 require "vinegar/client/root"
 require "vinegar/client/movie"
 require "vinegar/client/movie/review"
+require "vinegar/client/movie/cast"
 
 module Vinegar
   class Client
@@ -29,5 +30,6 @@ module Vinegar
     include Vinegar::Client::Root
     include Vinegar::Client::Movie
     include Vinegar::Client::Review
+    include Vinegar::Client::Cast
   end
 end
