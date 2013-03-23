@@ -1,6 +1,6 @@
 # Vinegar
 
-Rotten Tomatoes API Wrapper in Ruby
+Rotten Tomatoes API Wrapper in Ruby. Currently the wrapper supports the movies api and lists api is comming shortly.
 
 ## Installation
 
