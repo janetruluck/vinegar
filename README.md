@@ -1,4 +1,5 @@
 # Vinegar
+[![Code Climate](https://codeclimate.com/github/jasontruluck/vinegar.png)](https://codeclimate.com/github/jasontruluck/vinegar)
 
 Rotten Tomatoes API Wrapper in Ruby. Currently the wrapper supports the movies api and lists api is comming shortly.
 
