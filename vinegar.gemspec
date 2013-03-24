@@ -9,12 +9,13 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Jason Truluck"]
   gem.email         = ["jason.truluck@gmail.com"]
   gem.description   = %q{Rotten Tomatoes API Wrapper in Ruby}
-  gem.summary       = spec.description
+  gem.summary       = gem.description
   gem.homepage      = "https://github.com/jasontruluck/vinegar"
 
   gem.add_dependency "faraday"
   gem.add_dependency "faraday_middleware"
   gem.add_dependency "hashie"
+  gem.add_development_dependency "bundler"
   gem.add_development_dependency "rspec"
   gem.add_development_dependency "vcr"
   gem.add_development_dependency "mocha"
