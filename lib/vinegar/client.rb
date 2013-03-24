@@ -15,6 +15,7 @@ module Vinegar
     attr_accessor(*Configuration::VALID_OPTIONS_KEYS)
 
     def initialize(options = {})
+      Vinegar.reset!
       options = Vinegar.options.merge(options)
 
       Configuration::VALID_OPTIONS_KEYS.each do |key|
