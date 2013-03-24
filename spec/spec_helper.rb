@@ -26,11 +26,11 @@ require "mocha/api"
 auth = YAML::load(File.open(File.expand_path("../fixtures/authentications.yml", __FILE__)))
 
 VCR.configure do |c|
-  c.cassette_library_dir = 'spec/cassettes'
-  c.hook_into :faraday
-  c.ignore_localhost = true
   # Uncomment if you need to log VCR
   # c.debug_logger = File.open(Rails.root.join("log","vcr_debugger.log"), 'w')
+  c.cassette_library_dir                    = 'spec/cassettes'
+  c.hook_into                                 :faraday
+  c.ignore_localhost                        = true
   c.configure_rspec_metadata!
   c.allow_http_connections_when_no_cassette = true
   c.filter_sensitive_data('<rotten_tomatoes_auth>') do
