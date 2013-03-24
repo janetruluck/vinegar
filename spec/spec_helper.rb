@@ -33,6 +33,9 @@ VCR.configure do |c|
   # c.debug_logger = File.open(Rails.root.join("log","vcr_debugger.log"), 'w')
   c.configure_rspec_metadata!
   c.allow_http_connections_when_no_cassette = true
+  c.filter_sensitive_data('<rotten_tomatoes_auth>') do
+    api_key = auth["api_key"]
+  end
 end
 
 WebMock.allow_net_connect!

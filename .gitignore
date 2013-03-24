@@ -16,7 +16,6 @@ test/tmp
 test/version_tmp
 tmp
 
-spec/cassettes
 spec/.DS_Store
 
 spec/fixtures/authentications.yml

@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.rottentomatoes.com/api/public/v1.0?apikey=<rotten_tomatoes_auth>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.6
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      !binary "Y2FjaGUtY29udHJvbA==":
+      - !binary |-
+        bm8tc3RvcmUsIG5vLWNhY2hlLCBtdXN0LXJldmFsaWRhdGUsIHBvc3QtY2hl
+        Y2s9MCwgcHJlLWNoZWNrPTA=
+      !binary "Y29udGVudC1sYW5ndWFnZQ==":
+      - !binary |-
+        ZW4tVVM=
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        dGV4dC9qYXZhc2NyaXB0O2NoYXJzZXQ9SVNPLTg4NTktMQ==
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        U3VuLCAyNCBNYXIgMjAxMyAxOTozMzo1NiBHTVQ=
+      !binary "ZXhwaXJlcw==":
+      - !binary |-
+        U2F0LCA2IE1heSAxOTk1IDEyOjAwOjAwIEdNVA==
+      !binary "cHJhZ21h":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "c2VydmVy":
+      - !binary |-
+        TWFzaGVyeSBQcm94eQ==
+      !binary "c2V0LWNvb2tpZQ==":
+      - !binary |-
+        U2VydmVySUQ9MTMzNjsgUGF0aD0vLCBKU0VTU0lPTklEPTg3ODkxN0I4RTNG
+        RUI4MjI3N0NFRkFBQTM3OTQzRUI5LmxvY2FsaG9zdDsgUGF0aD0v
+      !binary "dmFyeQ==":
+      - !binary |-
+        VXNlci1BZ2VudCxBY2NlcHQtRW5jb2Rpbmc=
+      !binary "eC1tYXNoZXJ5LXJlc3BvbmRlcg==":
+      - !binary |-
+        cHJvZC1qLXdvcmtlci11cy1lYXN0LTFkLTM1Lm1hc2hlcnkuY29t
+      !binary "Y29udGVudC1sZW5ndGg=":
+      - !binary |-
+        MTA3
+      !binary "Y29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        CgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKeyJsaW5rcyI6eyJsaXN0cyI6
+        Imh0dHA6Ly9hcGkucm90dGVudG9tYXRvZXMuY29tL2FwaS9wdWJsaWMvdjEu
+        MC9saXN0cy5qc29uIiwibW92aWVzIjoiaHR0cDovL2FwaS5yb3R0ZW50b21h
+        dG9lcy5jb20vYXBpL3B1YmxpYy92MS4wL21vdmllcy5qc29uIn19Cg==
+    http_version: 
+  recorded_at: Sun, 24 Mar 2013 19:33:55 GMT
+recorded_with: VCR 2.4.0
