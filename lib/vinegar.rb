@@ -1,5 +1,6 @@
 require "vinegar/version"
 require "vinegar/configuration"
+require "vinegar/error"
 require "vinegar/client"
 
 module Vinegar

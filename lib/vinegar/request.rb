@@ -3,12 +3,16 @@ module Vinegar
     def get(path, options = {})
       response = request(:get, path, options)
       response.body
+    rescue Vinegar::UnauthorizedError
+      "You must enter your API key to authorize your requests."
     end
 
     private
     def request(method, path, options = {})
+      authenticated?
+
       url = options.delete(:api_endpoint) || api_endpoint
-      key = options.delete(:api_key) || api_key
+      key = options.delete(:api_key)      || api_key
 
       connection_options = {
         :url    => url

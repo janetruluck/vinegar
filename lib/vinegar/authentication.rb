@@ -5,7 +5,7 @@ module Vinegar
       if api_key
         { :api_key => api_key}
       else
-        {}
+        raise UnauthorizedError
       end
     end
 
