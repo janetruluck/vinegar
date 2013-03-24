@@ -5,6 +5,10 @@ Rotten Tomatoes API Wrapper in Ruby. Currently the wrapper supports the movies a
 
 ## Installation
 
+Sign up for a Rotten Tomatoes API key:
+
+http://developer.rottentomatoes.com/member/register
+
 Add this line to your application's Gemfile:
 
     gem 'vinegar'
