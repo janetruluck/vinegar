@@ -1,10 +1,28 @@
+---
 language: ruby
 script:
-  - bundle exec rspec
+- bundle exec rspec
 rvm:
-  - rbx-18mode
-  - rbx-19mode
-  - 1.8.7
-  - 1.9.2
-  - 1.9.3
-  - 2.0.0
+- rbx-18mode
+- rbx-19mode
+- 1.8.7
+- 1.9.2
+- 1.9.3
+- 2.0.0
+env:
+  global:
+  - secure: ! 'bq7hMboLVCQ+cNDME+P4dM5UdgQbxfPyg7RH/5lhlSXJN3wbKupX8hCVOPEI
+
+      SDO/BKgVJSKlQLrFjamwhkjwlJOkdQOIJi3JNJPQY7+Jjn9SCgpfYxnm+g++
+
+      gay4cl9kc6b7+NJla0c3SyCjIDQ+dtjgx9ODakPnnYVaby26+r4='
+  - secure: ! 'E5XujBZ6Rwjh4I2tsgDLR/rnHsngrHPphU9LAgGp1xY339V3Y7sjwW64zc72
+
+      mFBAFS3Zfwjmo0yYJBHUKG8QvmgnqSEzI//V980IKBEO8toH/SyPvihoCDNv
+
+      e+0NRsCL/cwd0hBHnHX8HPWfnRHgKbd32/lMc77lKdd/KKcseNw='
+  - secure: ! 'Z3jkwv50DRsuGLCJuIhn7k5RRG+5AtR4E6T3PXrwkEEVtjspAxFVuswRH+CJ
+
+      mp1SB0I3tXAandpsyAwk3VYixOBD+O+LAoyELYKhB/JF3W7SnU+zESJwY/GB
+
+      ojvHwKBHsfS/EmZLUcMf1vlbNd3RVl7fYT/LBXM0c7QcD+cnZto='
