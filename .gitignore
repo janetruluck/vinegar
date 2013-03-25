@@ -29,3 +29,5 @@ lib/vinegar/client/movies/.DS_Store
 lib/vinegar/client/movie/.DS_Store
 
 spec/vinegar/client/movies/.DS_Store
+
+spec/cassettes
