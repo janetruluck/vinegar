@@ -22,7 +22,10 @@ require 'vcr'
 require "mocha/api"
 
 # Load Authentications
-auth = YAML::load(File.open(File.expand_path("../fixtures/authentications.yml", __FILE__)))
+file = File.expand_path("../fixtures/authentications.yml", __FILE__)
+if File.exists?(file)
+  ENV.update YAML::load(File.open(file))
+end
 
 VCR.configure do |c|
   # Uncomment if you need to log VCR
@@ -33,7 +36,7 @@ VCR.configure do |c|
   c.configure_rspec_metadata!
   c.allow_http_connections_when_no_cassette = true
   c.filter_sensitive_data('<rotten_tomatoes_auth>') do
-    api_key = auth["api_key"]
+    api_key = ENV["API_KEY"]
   end
 end
 
