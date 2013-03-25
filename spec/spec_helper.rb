@@ -19,7 +19,6 @@ end
 
 require 'vinegar'
 require 'vcr'
-require "webmock/rspec"
 require "mocha/api"
 
 # Load Authentications
@@ -37,8 +36,6 @@ VCR.configure do |c|
     api_key = auth["api_key"]
   end
 end
-
-WebMock.allow_net_connect!
 
 Dir[File.expand_path("spec/support/**/*.rb", __FILE__)].each {|f| require f}
 
