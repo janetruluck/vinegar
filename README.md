@@ -59,13 +59,13 @@ client.all_movie_reviews(12345) #12345 is the movies Rotten Tomatoes ID
 
 ### [Get similar movies for a movie](http://rdoc.info/github/jasontruluck/vinegar/Vinegar/Client/Similar)
 
-```ruby 
+```ruby
 client.similar_movies(12345) #12345 is the movies Rotten Tomatoes ID
 ```
 
 ### [Get clips for a movie](http://rdoc.info/github/jasontruluck/vinegar/Vinegar/Client/Clip)
 
-```ruby 
+```ruby
 client.clips_for_movie(12345) #12345 is the movies Rotten Tomatoes ID
 ```
 
@@ -74,12 +74,12 @@ client.clips_for_movie(12345) #12345 is the movies Rotten Tomatoes ID
 This gem uses VCR to record requests to the api so you must test using a valid API key from Rotten Tomatoes.
 
 Add a sample authentications file to your `spec/fixtures` directory:
-    
+
 ```ruby
 #spec/fixtures/authentications.yml
-api_key:        1234567890 # Your API key
-movies_search: "Star Wars" # Movie title you would like to use for search tests
-movie_id:       9          # ID of a movie you would like to use for movie tests
+api_key:       "1234567890" # Your API key
+movies_search: "Star Wars"  # Movie title you would like to use for tests
+movie_id:      "9"          # ID of a movie you would like to use for tests
 ```
 
 A sample is included in the [directory](https://github.com/jasontruluck/vinegar/blob/master/spec/fixtures/authentication.yml.sample).

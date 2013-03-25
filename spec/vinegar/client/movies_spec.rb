@@ -1,20 +1,18 @@
 require "spec_helper"
 
-auth = YAML::load(File.open(File.expand_path("../../../fixtures/authentications.yml", __FILE__)))
-
 # Movie Search Spec
 describe Vinegar::Client do
   before do
     Vinegar.reset!
     Vinegar.configure do |c|
-      c.api_key = auth["api_key"]
+      c.api_key = ENV["API_KEY"]
     end
   end
 
-  let(:vinegar) { Vinegar::Client.new(:api_key => auth["api_key"]) }
+  let(:vinegar) { Vinegar::Client.new(:api_key => ENV["API_KEY"]) }
 
   describe "#movies_search", :vcr do
-    let(:current_response) { vinegar.movies_search(auth["movies_search"]) }
+    let(:current_response) { vinegar.movies_search(ENV["MOVIES_SEARCH"]) }
 
     it "should return the movies_search response" do
       current_response.should_not be_nil
@@ -137,7 +135,7 @@ describe Vinegar::Client do
   end
 
   describe "#movie", :vcr do
-    let(:current_response) { vinegar.movie(auth["movie_id"]) }
+    let(:current_response) { vinegar.movie(ENV["MOVIE_ID"]) }
 
     it "returns the movie response" do
       current_response.should_not be_nil
