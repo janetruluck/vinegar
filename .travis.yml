@@ -11,18 +11,18 @@ rvm:
 - 2.0.0
 env:
   global:
-  - secure: ! 'bq7hMboLVCQ+cNDME+P4dM5UdgQbxfPyg7RH/5lhlSXJN3wbKupX8hCVOPEI
+  - secure: ! 'XC/M5/1tr1rMWkQCr6JzNT+UG6D3HpomvbXcDhI2b33Jnk3+7scGto6ZL7EE
 
-      SDO/BKgVJSKlQLrFjamwhkjwlJOkdQOIJi3JNJPQY7+Jjn9SCgpfYxnm+g++
+      OVF8zECQQmlnSfm+EM3aPZTaDcpDivOuusvId0bOTsBZSpetj7IDP8+RnzhD
 
-      gay4cl9kc6b7+NJla0c3SyCjIDQ+dtjgx9ODakPnnYVaby26+r4='
-  - secure: ! 'Z3jkwv50DRsuGLCJuIhn7k5RRG+5AtR4E6T3PXrwkEEVtjspAxFVuswRH+CJ
+      hEJxrn8CWAizggEspWHGLcaRVc2Kmb2Is/Ad69sNGKYDgmvRErQ='
+  - secure: ! 'FDVLhnd6VIAUGsGgxrXH7GeWpddD/4cRx+kOXylWZiF7OaNOUgw50vMg1h0C
 
-      mp1SB0I3tXAandpsyAwk3VYixOBD+O+LAoyELYKhB/JF3W7SnU+zESJwY/GB
+      7wWLaFtndP059JgtcdcZTsmBE/jW90DXuAfgi2+JSWrwDOugr0qJbIBvuvf+
 
-      ojvHwKBHsfS/EmZLUcMf1vlbNd3RVl7fYT/LBXM0c7QcD+cnZto='
-  - secure: ! 'cLKKt6z2W+Zjms2dMR2Q21K5Ov6DNHkUvL2gv5N5N76hH34ua8h3wn80qk5l
+      jqEsQQYgMAV6CTF+c1aWAO3mGCIcOb8ZzTr5JY6M2vL5zAIYAr4='
+  - secure: ! 'G30liOBMwLe/jKJzZoFi2HosHycPpFIgj2UYCyLYifa0UhXri3f6YFtFJ66k
 
-      0u4ZTzbK7C0z8j8baCdbJDi9+8dn9ucpMXKuNfxDX+UL6EjM0tRkQA3B6tWk
+      dfd8wA4tDMfsHVqXG5iekkX7LpNvyjPbgq/zKI92oJLO6WGujc2x+LLeZwCD
 
-      DEm54mi6Ij2GizXNVe8zmjlSIlfa2XP79jKLw1aQDOuyCgkovzA='
+      OAf8bHf+maiVUWSd9KJ2qQ2oRtJ3fqD1wjN1GOtVo4cCWcvcsxY='
