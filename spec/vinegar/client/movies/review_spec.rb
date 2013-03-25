@@ -1,20 +1,18 @@
 require "spec_helper"
 
-auth = YAML::load(File.open(File.expand_path("../../../../fixtures/authentications.yml", __FILE__)))
-
 # Movie Search Spec
 describe Vinegar::Client do
   before do
     Vinegar.reset!
     Vinegar.configure do |c|
-      c.api_key = auth["api_key"]
+      c.api_key = ENV["API_KEY"]
     end
   end
 
-  let(:vinegar) { Vinegar::Client.new(:api_key => auth["api_key"]) }
+  let(:vinegar) { Vinegar::Client.new(:api_key => ENV["API_KEY"]) }
 
   describe "#reviews", :vcr do
-    let(:current_response) { vinegar.all_movie_reviews(auth["movie_id"]) }
+    let(:current_response) { vinegar.all_movie_reviews(ENV["MOVIE_ID"]) }
 
     it "returns the all_movie_review response" do
       current_response.should_not be_nil
@@ -83,7 +81,7 @@ describe Vinegar::Client do
     end
 
     context "#all_movie_reviews" do
-      let(:current_response) { vinegar.all_movie_reviews(auth["movie_id"]) }
+      let(:current_response) { vinegar.all_movie_reviews(ENV["MOVIE_ID"]) }
 
       it "returns the all_movie_review response" do
         current_response.should_not be_nil
@@ -91,7 +89,7 @@ describe Vinegar::Client do
     end
 
     context "#top_critic_movie_reviews" do
-      let(:current_response) { vinegar.top_critic_movie_reviews(auth["movie_id"]) }
+      let(:current_response) { vinegar.top_critic_movie_reviews(ENV["MOVIE_ID"]) }
 
       it "returns the top_critic_movie_review response" do
         current_response.should_not be_nil
@@ -99,7 +97,7 @@ describe Vinegar::Client do
     end
 
     context "#dvd_movie_reviews" do
-      let(:current_response) { vinegar.dvd_movie_reviews(auth["movie_id"]) }
+      let(:current_response) { vinegar.dvd_movie_reviews(ENV["MOVIE_ID"]) }
 
       it "returns the dvd_movie_review response" do
         current_response.should_not be_nil

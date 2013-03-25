@@ -1,13 +1,11 @@
 require "spec_helper"
 
-auth = authentications = YAML::load(File.open(File.expand_path("../../fixtures/authentications.yml", __FILE__)))
-
 # Client Spec
 describe Vinegar::Client do
   before do
     Vinegar.reset!
     Vinegar.configure do |c|
-      c.api_key = auth["api_key"]
+      c.api_key = ENV["API_KEY"]
     end
   end
 
@@ -21,20 +19,20 @@ describe Vinegar::Client do
     end
 
     it "works with and api key", :vcr do
-      response = Vinegar::Client.new(:api_key => auth["api_key"]).root
+      response = Vinegar::Client.new(:api_key => ENV["API_KEY"]).root
       response.should_not
       raise_exception
     end
 
     it "can be configured to use a new endpoint via options" do
       endpoint = "http://new.endpoint.com"
-      client = Vinegar::Client.new(:api_key => auth["api_key"], :api_endpoint => endpoint )
+      client = Vinegar::Client.new(:api_key => ENV["API_KEY"], :api_endpoint => endpoint )
       client.api_endpoint.should == endpoint
     end
 
     it "can be configured to use a new API version via options" do
       version = 2.0
-      client = Vinegar::Client.new(:api_key => auth["api_key"], :api_version => version )
+      client = Vinegar::Client.new(:api_key => ENV["API_KEY"], :api_version => version )
       client.api_version.should == version
     end
 
