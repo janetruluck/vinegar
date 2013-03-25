@@ -1,5 +1,6 @@
 # Vinegar
-[![Code Climate](https://codeclimate.com/github/jasontruluck/vinegar.png)](https://codeclimate.com/github/jasontruluck/vinegar)
+[![Code Climate](https://codeclimate.com/github/jasontruluck/vinegar.png)](https://codeclimate.com/github/jasontruluck/vinegar) [![Build Status](https://travis-ci.org/jasontruluck/vinegar.png?branch=travis-test)](https://travis-ci.org/jasontruluck/vinegar) [![Coverage Status](https://coveralls.io/repos/jasontruluck/vinegar/badge.png?branch=master)](https://coveralls.io/r/jasontruluck/vinegar)
+
 
 Rotten Tomatoes API Wrapper in Ruby. Currently the wrapper supports the movies api and lists api is comming shortly.
 
